@@ -34,13 +34,13 @@ function LoginButton() {
             await signInWithPopup(auth, provider)
         } catch (err) {
             console.error(err);
-            setError(err.mesasge)
+            setError(err.message)
         }
     };
     return (
         <div>
             <button onClick={loginWithGoogle}>グーグルでログインする</button>
-            {error && <p>{error}</p>}
+            {error && <p className='error_message'>ログインに失敗しました。</p>}
         </div>
     );
 
