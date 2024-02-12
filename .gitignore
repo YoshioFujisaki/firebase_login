@@ -6,6 +6,9 @@
 .pnp.js
 .env
 
+# environment
+/.env.local
+
 # testing
 /coverage
 
